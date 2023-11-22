@@ -39,10 +39,11 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/edit_login"
+        android:textColor="#000"
         android:hint="Masukkan Email"
         android:inputType="textEmailAddress"
         android:paddingLeft="16dp"
-        android:textColorHint="#818181"
+        android:textColorHint="#7A7A7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tV_Email" />
@@ -69,10 +70,11 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/edit_login"
+        android:textColor="#000"
         android:hint="Masukkan Kata Sandi"
         android:inputType="textPassword"
         android:paddingLeft="16dp"
-        android:textColorHint="#818181"
+        android:textColorHint="#7A7A7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -95,6 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="100dp"
             android:text="Ingat Saya"
+            android:textColorHint="#000"
             android:textColor="#000"
             android:textSize="12dp"
             tools:ignore="TextSizeCheck" />

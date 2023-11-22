@@ -15,7 +15,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="176dp"
         android:layout_marginRight="16dp"
-        android:src="@drawable/fotowelcom"
+        android:src="@drawable/welco"
         android:textAlignment="center"
         android:textColor="#000"
         android:textSize="20dp"

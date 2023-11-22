@@ -11,6 +11,7 @@ import com.ridwan.pantipeduli.databinding.ActivityLoginandsignupBinding
 
 class Loginandsignup : AppCompatActivity() {
     private lateinit var binding: ActivityLoginandsignupBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLoginandsignupBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -25,6 +26,13 @@ class Loginandsignup : AppCompatActivity() {
             myDialog.setCancelable(true)
             myDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             myDialog.show()
+            val btndonatur = dialogBinding.findViewById<Button>(R.id.btn_donatur)
+            btndonatur.setOnClickListener {
+                val s = Intent(this@Loginandsignup,Daftardonatur::class.java)
+                startActivity(s)
+                finish()
+            }
+
         }
 
         binding.imkiri1.setOnClickListener {
