@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:id="@+id/home"
+       android:title="Home"
+       android:icon="@drawable/home"
+       android:iconTint="#F3D1E1"/>
+ <item android:id="@+id/donasi"
+       android:title="Donasi"
+       android:icon="@drawable/donasi"/>
+ <item android:id="@+id/notif"
+       android:title="Notifikasi"
+       android:icon="@drawable/notif"/>
+ <item android:id="@+id/akun"
+       android:title="Akun"
+       android:icon="@drawable/baseline_person_outline_24"/>
+</menu>

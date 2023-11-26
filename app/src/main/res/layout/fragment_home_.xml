@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".home_Fragment">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="19dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginLeft="16dp"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/profidonasi"/>
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_gravity="center"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Ridwan Sumardi"
+                   android:layout_marginLeft="2dp"
+                   android:textColor="#000"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ridwan23gmail.com"
+                   android:layout_marginLeft="2dp"
+                   android:textColor="#000"/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/right24"
+           android:layout_gravity="right"
+           android:layout_marginRight="16dp"/>
+
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:flipInterval="2000"
+                android:autoStart="true"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fotor"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/foto2"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/foto3"/>
+            </ViewFlipper>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="6dp"
+               android:src="@drawable/kabarpanti"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="13dp"
+               android:src="@drawable/donasi"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="13dp"
+               android:src="@drawable/caripanti"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="440dp"
+           android:layout_marginTop="12dp"
+           android:background="@drawable/bar_home"
+           android:orientation="vertical">
+
+           <com.google.android.material.search.SearchBar
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:background="@drawable/edit_login"
+               android:backgroundTint="@color/white"
+               app:subtitleTextColor="#000"
+               tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+               <ListView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+
+
+           </com.google.android.material.search.SearchBar>
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:src="@drawable/sementar1"/>
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:src="@drawable/sementara2"/>
+
+
+
+
+
+       </LinearLayout>
+
+           
+
+
+           
+
+
+
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

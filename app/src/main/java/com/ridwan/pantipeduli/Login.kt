@@ -19,12 +19,19 @@ class Login : AppCompatActivity() {
                 binding.editText.error = "Harap diisi bidik ini"
             }else{
                 if (binding.edtEmail.text.toString().equals("ridwan23@gmail.com")&& binding.editText.text.toString().equals("123")){
-                    startActivity(Intent(this@Login,Profil::class.java))
+                    startActivity(Intent(this@Login,Home::class.java))
                     finish()
                 }else{
                     Toast.makeText(this@Login,"Gagal Login",Toast.LENGTH_SHORT).show()
                 }
             }
+            binding.daftar.setOnClickListener{
+                val x = Intent(this@Login,Daftardonatur::class.java)
+                startActivity(x)
+                finish()
+            }
+            
         }
     }
+
 }
