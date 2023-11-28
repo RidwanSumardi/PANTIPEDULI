@@ -32,6 +32,11 @@ class Login : AppCompatActivity() {
             }
             
         }
+        binding.tvLupasandi.setOnClickListener{
+            val x = Intent(this@Login,Lupa_katasandi::class.java)
+            startActivity(x)
+            finish()
+        }
     }
 
 }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2favoritsaya">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="451dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/fav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pantibinarmj"
+        android:layout_width="422dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/pantibinaremaja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/yayasancahaya"
+        android:layout_width="422dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/yayasancahaya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantibinarmj" />
+
+    <ImageView
+        android:id="@+id/panticemerlang"
+        android:layout_width="422dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/panticemerlang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yayasancahaya" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_buton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#Fff"
+        app:itemIconTint="#F3D1E1"
+        app:itemTextColor="#F3D1E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panticemerlang"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/navbar_cover" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
