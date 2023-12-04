@@ -6,12 +6,25 @@
     android:background="#fff"
     tools:context=".notif_Fragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:gravity="center"
-        android:text="notif" />
+    <ImageView
+        android:id="@+id/notif"
+        android:layout_width="367dp"
+        android:layout_height="171dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/teksnotif" />
 
+    <ImageView
+        android:id="@+id/logonotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logonotif"
+        ></ImageView>
+
+    <ImageButton
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/navbar"/>
 </FrameLayout>
