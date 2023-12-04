@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFF"
     tools:context=".Loginandsignup">
+
     <ImageView
         android:id="@+id/imkiri1"
         android:layout_width="40dp"
@@ -34,24 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/btn_mulai"
-        android:hint="Masuk"
-        android:textColorHint="#000"
-        android:textColor="#000"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image1"
-        app:layout_constraintVertical_bias="0.338"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_daftar"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginTop="200dp"
         android:layout_marginRight="25dp"
         android:background="@drawable/btndaftar"
         android:hint="Daftar"
@@ -60,9 +44,27 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_masuk"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
         app:layout_constraintVertical_bias="0.052"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/btn_mulai"
+        android:hint="Daftar"
+        android:textColorHint="#000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_masuk"
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

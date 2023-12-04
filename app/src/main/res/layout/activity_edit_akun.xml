@@ -169,15 +169,17 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_buton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="423dp"
+        android:layout_height="68dp"
+        android:background="#000"
         app:itemIconTint="#F3D1E1"
         app:itemTextColor="#F3D1E1"
-        android:background="#Fff"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/navbar_cover"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/navbar_cover" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

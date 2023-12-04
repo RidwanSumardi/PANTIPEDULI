@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- res/drawable/rounded_rectangle.xml -->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#FF0000" /> <!-- Warna background -->
+        <corners android:radius="20dp" /> <!-- Radius sudut -->
+    </shape>
+
+</selector>

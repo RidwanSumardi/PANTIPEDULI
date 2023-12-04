@@ -13,6 +13,7 @@ class Welcom : AppCompatActivity() {
         binding = ActivityWelcomBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
         binding.btnMulai.setOnClickListener {
             val x = Intent(this@Welcom,Loginandsignup::class.java)
             startActivity(x)

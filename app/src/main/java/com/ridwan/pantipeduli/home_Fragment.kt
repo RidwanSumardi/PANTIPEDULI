@@ -1,10 +1,14 @@
 package com.ridwan.pantipeduli
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,6 +24,10 @@ class home_Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    lateinit var  textemail : TextView
+    lateinit var textsandi :TextView
+    lateinit var kabarpanti: ImageView
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +44,12 @@ class home_Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_, container, false)
+
+        kabarpanti.findViewById<ImageView>(R.id.kabarpanti)
+        val s = Intent(requireContext(),Login::class.java)
+        startActivity(s)
+
+
     }
 
     companion object {
@@ -57,4 +71,5 @@ class home_Fragment : Fragment() {
                 }
             }
     }
+
 }
