@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_email" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/ed_sandi"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="16dp"
@@ -83,6 +83,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,8 +98,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="100dp"
             android:text="Ingat Saya"
-            android:textColorHint="#000"
             android:textColor="#000"
+            android:textColorHint="#000"
             android:textSize="12dp"
             tools:ignore="TextSizeCheck" />
 
@@ -116,7 +117,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -141,7 +142,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton">
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        tools:ignore="UnknownId">
 
         <TextView
             android:layout_width="wrap_content"
@@ -206,11 +208,12 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="128dp"
         android:src="@drawable/google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="parent" />
 
 

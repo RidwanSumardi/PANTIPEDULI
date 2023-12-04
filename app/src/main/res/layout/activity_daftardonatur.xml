@@ -19,13 +19,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tV_nama"
+        android:id="@+id/tV_Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="16dp"
-        android:text="Nama"
+        android:text="Email"
         android:textColor="#000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,14 +39,14 @@
         android:layout_marginTop="12dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/edit_login"
-        android:hint="Masukkan Nama"
-        android:textColor="#000"
+        android:hint="Masukkan Email"
         android:inputType="textEmailAddress"
         android:paddingLeft="16dp"
+        android:textColor="#000"
         android:textColorHint="#818181"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_nama" />
+        app:layout_constraintTop_toBottomOf="@+id/tV_Email" />
 
     <TextView
         android:id="@+id/katasandi"
@@ -72,105 +72,72 @@
         android:background="@drawable/edit_login"
         android:hint="Masukkan Kata Sandi"
         android:inputType="textPassword"
-        android:textColor="#000"
         android:paddingLeft="16dp"
+        android:textColor="#000"
         android:textColorHint="#818181"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/katasandi" />
 
-    <TextView
-        android:id="@+id/tv_no.hp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="16dp"
-        android:text="No.Hp"
-        android:textColor="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_sandi" />
+<!--    <TextView-->
+<!--        android:id="@+id/tv_cSandi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:text="Konfirmasi"-->
+<!--        android:textColor="#000"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.555"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ed_sandi" />-->
 
-    <EditText
-        android:id="@+id/ed_No.hp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
-        android:textColor="#000"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/edit_login"
-        android:hint="Masukkan Kata No.Hp"
-        android:inputType="number"
-        android:paddingLeft="16dp"
-        android:textColorHint="#818181"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_no.hp" />
-
-    <TextView
-        android:id="@+id/tv_Rekening"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="16dp"
-        android:text="Rekening"
-        android:textColor="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_No.hp" />
-
-    <EditText
-        android:id="@+id/ed_Rekening"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="16dp"
-        android:textColor="#000"
-        android:background="@drawable/edit_login"
-        android:hint="Masukkan Kata Rekening"
-        android:inputType="number"
-        android:paddingLeft="16dp"
-        android:textColorHint="#818181"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Rekening" />
+<!--    <EditText-->
+<!--        android:id="@+id/ed_csandi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:background="@drawable/edit_login"-->
+<!--        android:hint="Konfirmasi Sandi"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:paddingLeft="16dp"-->
+<!--        android:textColor="#000"-->
+<!--        android:textColorHint="#818181"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_cSandi" />-->
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_masuk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
         android:background="@drawable/btn_mulai"
+        android:layout_margin="16dp"
         android:hint="Masuk"
         android:textColorHint="#000"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_Rekening" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_sandi" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="667dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_masuk">
 
         <View
             android:id="@+id/view"
@@ -206,12 +173,14 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="56dp"
         android:src="@drawable/google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.136" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

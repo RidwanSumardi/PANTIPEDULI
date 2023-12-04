@@ -27,9 +27,16 @@ class Loginandsignup : AppCompatActivity() {
             myDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             myDialog.show()
             val btndonatur = dialogBinding.findViewById<Button>(R.id.btn_donatur)
+            val btnpanti = dialogBinding.findViewById<Button>(R.id.btn_pemilikpanti)
+
             btndonatur.setOnClickListener {
-                val s = Intent(this@Loginandsignup,Daftardonatur::class.java)
+                val s = Intent(this@Loginandsignup,Home::class.java)
                 startActivity(s)
+                finish()
+            }
+            btnpanti.setOnClickListener {
+                val p = Intent(this@Loginandsignup,Login::class.java)
+                startActivity(p)
                 finish()
             }
 
@@ -40,11 +47,8 @@ class Loginandsignup : AppCompatActivity() {
             startActivity(i)
             finish()
         }
-        binding.btnMasuk.setOnClickListener {
-            val i = Intent(this@Loginandsignup,Login::class.java)
-            startActivity(i)
-            finish()
-        }
+
+
 
     }
 }
